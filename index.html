@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern HTML Boilerplate</title>
+    <style>
+        /* Modern CSS Reset & Variables */
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #212529;
+            --primary-color: #0d6efd;
+            --accent-color: #6c757d;
+            --card-bg: #ffffff;
+            --max-width: 800px;
+        }
+
+        /* Dark Mode Support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --text-color: #e0e0e0;
+                --primary-color: #3ea6ff;
+                --accent-color: #aaaaaa;
+                --card-bg: #1e1e1e;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        /* Typography */
+        header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 0.5rem;
+        }
+
+        p.subtitle {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+
+        /* Component Styles */
+        main {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 0.5rem;
+        }
+
+        /* Interactive Elements */
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            text-decoration: none;
+        }
+
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Welcome to Your Project</h1>
+            <p class="subtitle">A clean, modern, and minimalist start.</p>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <section>
+                <h2>Getting Started</h2>
+                <p>This boilerplate includes a responsive layout, beautiful system typography, and native dark mode support based on your device settings.</p>
+            </section>
+
+            <section>
+                <h2>Features Included</h2>
+                <p>Everything is contained in a single file to keep things simple. You can immediately start editing this text or adding your own components below.</p>
+            </section>
+
+            <a href="#" class="btn">Explore More</a>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2026 Your Name. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript can be placed here if needed -->
+    <script>
+        console.log("Boilerplate loaded successfully.");
+    </script>
+</body>
+</html>
